@@ -49,14 +49,14 @@ The three populations exchange members as time goes on as shown in the diagram b
 ##### 1.2) Simple SIR 
 As a simple example of an SIR model, consider the case where 
 - recovered people never become susceptable, which corresponds to the value <img src="https://render.githubusercontent.com/render/math?math=c=0">,
-- no vaccine exists, so susceptable people never become recovered without first becoming infected, which corresponds to <img src="https://render.githubusercontent.com/render/math?math=https://render.githubusercontent.com/render/math?math=\alpha=0">. 
+- no vaccine exists, so susceptable people never become recovered without first becoming infected, which corresponds to <img src="https://render.githubusercontent.com/render/math?math=\alpha=0">. 
 - The total population is 1 in units of millions (and, to further simplify, is constant). 
 
 <img src="code/images/simple_SIR.png" alt="drawing" width="400"/>
 
 Then the time rates of change of the three categories are descibed by the non-linear ordinary differential equaiton
 
-<img src="https://render.githubusercontent.com/render/math?math=\frac{d}{dt}\left(%20\begin{array}{c}S%20\\%20I%20\\%20R%20%20\end{array}%20\right)"> <img src="https://render.githubusercontent.com/render/math?math==)"> <img src="https://render.githubusercontent.com/render/math?math=\left(%20\begin{array}{c}-aSI\\aSI-bI\\bI%20%20%20\end{array}%20\right)">
+<img src="https://render.githubusercontent.com/render/math?math=\frac{d}{dt}\left(%20\begin{array}{c}S%20\\%20I%20\\%20R%20%20\end{array}%20\right)"> <img src="https://render.githubusercontent.com/render/math?math=="> <img src="https://render.githubusercontent.com/render/math?math=\left(%20\begin{array}{c}-aSI\\aSI-bI\\bI%20%20%20\end{array}%20\right)">
 
 Because the sum of the number of people in the three categries is, in our simplifying assumption, 1 million,
 $$
