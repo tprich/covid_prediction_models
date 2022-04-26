@@ -36,30 +36,27 @@ The Federal Department of Health has put together a team of data scientists to h
 
 SIR models provide a theoretical framework for the time rates of change of three populations in an outbreak of a contageous disease. The populations in the model are given the shorthand 
 - <img src="https://render.githubusercontent.com/render/math?math=S"> for the number of people in the population that are suscptable to getting infected
-- $I$ for the number of people that are infected
-- $R$ for the people that are recovered from the disease (and are therefore imune, possibly only temporarily)
-The three populations exchange members as time goes on as shown in the diagram below. For example, suscepable people become infected. The following directed graph shows the exchanges in the model with $a,~b,~c,$ and $\alpha$ as arbitary numbers. 
+- <img src="https://render.githubusercontent.com/render/math?math=I"> for the number of people that are infected
+- <img src="https://render.githubusercontent.com/render/math?math=R"> for the people that are recovered from the disease (and are therefore imune, possibly only temporarily)
+The three populations exchange members as time goes on as shown in the diagram below. For example, suscepable people become infected. The following directed graph shows the exchanges in the model with <img src="https://render.githubusercontent.com/render/math?math=a,b,c,"> and <img src="https://render.githubusercontent.com/render/math?math=\alpha"> as arbitary numbers. 
 
-- $a$ is called **transmissability**
-- $b$ is called **recovery rate**
-- $c$ is called **deimunization rate**
+- <img src="https://render.githubusercontent.com/render/math?math=a"> is called **transmissability**
+- <img src="https://render.githubusercontent.com/render/math?math=b"> is called **recovery rate**
+- <img src="https://render.githubusercontent.com/render/math?math=c"> is called **deimunization rate**
 
 <img src="code/images/full_SIR.png" alt="drawing" width="400"/>
 
 ##### 1.2) Simple SIR 
 As a simple example of an SIR model, consider the case where 
-- recovered people never become susceptable, which corresponds to the value $c=0$,
-- no vaccine exists, so susceptable people never become recovered without first becoming infected, which corresponds to $\alpha = 0$. 
+- recovered people never become susceptable, which corresponds to the value <img src="https://render.githubusercontent.com/render/math?math=c=0">,
+- no vaccine exists, so susceptable people never become recovered without first becoming infected, which corresponds to <img src="https://render.githubusercontent.com/render/math?math=https://render.githubusercontent.com/render/math?math=\alpha=0">. 
 - The total population is 1 in units of millions (and, to further simplify, is constant). 
 
 <img src="code/images/simple_SIR.png" alt="drawing" width="400"/>
 
 Then the time rates of change of the three categories are descibed by the non-linear ordinary differential equaiton
 
-$$\frac{d}{dt}\left( \begin{array}{c}S \\ I \\ R  \end{array} \right) 
-= 
-\left( \begin{array}{c}-aSI \\ aSI -bI \\ bI   \end{array} \right) 
-$$
+<img src="https://render.githubusercontent.com/render/math?math=\frac{d}{dt}\left(%20\begin{array}{c}S%20\\%20I%20\\%20R%20%20\end{array}%20\right)"> <img src="https://render.githubusercontent.com/render/math?math==)"> <img src="https://render.githubusercontent.com/render/math?math=\left(%20\begin{array}{c}-aSI\\aSI-bI\\bI%20%20%20\end{array}%20\right)">
 
 Because the sum of the number of people in the three categries is, in our simplifying assumption, 1 million,
 $$
